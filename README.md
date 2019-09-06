@@ -218,5 +218,3 @@ Once we have built the app and finished the configuration, we can run the app, a
 * In function 'attach_metadata_detector()' in deepstream source code:
  1. frame scale_ratio_x/scale_ratio_y is (network width/height) / (streammux width/height)
  2. Some objs will be filtered because its width/height/top/left is beyond the source size (streammux is as source)
-
-* For "mask rcnn", app can show bbox but cannot show mask in present. User can dump mask in nvdsinfer_customparser_mrcnn_uff/nvdsinfer_custombboxparser_mrcnn_uff.cpp -> "out_mask"
